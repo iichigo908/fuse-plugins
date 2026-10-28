@@ -3,7 +3,8 @@
     "name": "Fuse Plugins",
     "tagline": "DaVinci Resolve / Fusion 用の無料プラグイン",
     "about": "Fusion ページで使えるノード（Fuse）と、Edit ページで使えるエフェクトを配布しています。ダウンロードした zip に、Mac と Windows のインストール方法が入っています。",
-    "contact": ""
+    "contact": "",
+    "notice": "動作確認は DaVinci Resolve Studio 21.1（Mac）だけで行っています。無料版の DaVinci Resolve では確認していないため、Studio 限定（無料版では動かない）の可能性があります。"
   },
   "install": {
     "fuse": {
@@ -73,7 +74,7 @@
           }
         ]
       },
-      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
       "credits": [
         {
           "text": "Easing functions based on Robert Penner's easing equations",
@@ -88,7 +89,8 @@
           "date": "2026-10-27",
           "notes": "公開"
         }
-      ]
+      ],
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）"
     },
     {
       "id": "shapemorphtext",
@@ -145,7 +147,7 @@
           }
         ]
       },
-      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
       "credits": [
         {
           "text": "Shape SDFs based on Inigo Quilez",
@@ -170,7 +172,8 @@
           "date": "2026-10-20",
           "notes": "最初の版"
         }
-      ]
+      ],
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）"
     },
     {
       "id": "puppetpin",
@@ -223,7 +226,7 @@
           }
         ]
       },
-      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
       "credits": [
         {
           "text": "変形の手法: As-Rigid-As-Possible Surface Modeling (Sorkine & Alexa, 2007)",
@@ -237,7 +240,8 @@
           "date": "2026-10-27",
           "notes": "公開"
         }
-      ]
+      ],
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）"
     },
     {
       "id": "brushpaint",
@@ -290,7 +294,7 @@
           }
         ]
       },
-      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
       "credits": [],
       "changelog": [
         {
@@ -298,7 +302,8 @@
           "date": "2026-10-27",
           "notes": "公開"
         }
-      ]
+      ],
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）"
     },
     {
       "id": "telopanim",
@@ -360,7 +365,7 @@
           }
         ]
       },
-      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認。GPU（Metal / CUDA / OpenCL）で処理",
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
       "credits": [
         {
           "text": "Easing functions based on Robert Penner's easing equations",
@@ -375,7 +380,8 @@
           "date": "2026-10-27",
           "notes": "公開"
         }
-      ]
+      ],
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）"
     },
     {
       "id": "glassshatter",
@@ -443,7 +449,7 @@
           }
         ]
       },
-      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認。GPU（Metal / CUDA / OpenCL）で処理",
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
       "credits": [],
       "changelog": [
         {
@@ -456,7 +462,8 @@
           "date": "2026-10-28",
           "notes": "公開"
         }
-      ]
+      ],
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）"
     }
   ]
 }

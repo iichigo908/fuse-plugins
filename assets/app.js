@@ -15,6 +15,12 @@
 		if (about) about.textContent = data.site.about;
 		const year = $("#year");
 		if (year) year.textContent = new Date().getFullYear();
+		// site-wide notice (e.g. which Resolve editions are tested)
+		const notice = $("#site-notice");
+		if (notice && data.site.notice) {
+			notice.textContent = data.site.notice;
+			notice.hidden = false;
+		}
 	}
 
 	// ------------------------------------------------------------- list page
@@ -25,6 +31,7 @@
 				<div class="meta"><span class="badge">${esc(p.category)}</span><span>v${esc(p.version)}</span></div>
 				<h2>${esc(p.name)}</h2>
 				<p class="summary">${esc(p.summary)}</p>
+				${p.studioNote ? `<p class="studio">${esc(p.studioNote)}</p>` : ""}
 				<div class="meta">${p.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
 			</div>
 		</a>`;
@@ -84,6 +91,7 @@
 					<p class="lead">${esc(p.summary)}</p>
 					<a class="btn" href="${esc(p.download.url)}" download>ダウンロード <small>v${esc(p.version)} ・ ${kb(p.download.size)}</small></a>
 					<div class="sub">更新日 ${esc(p.updated)} ・ Mac / Windows</div>
+					${p.studioNote ? `<p class="studio">${esc(p.studioNote)}</p>` : ""}
 				</div>
 			</div>
 			<div class="sections">

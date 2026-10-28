@@ -4,7 +4,8 @@ window.SITE_DATA = {
   "name": "Fuse Plugins",
   "tagline": "DaVinci Resolve / Fusion 用の無料プラグイン",
   "about": "Fusion ページで使えるノード（Fuse）と、Edit ページで使えるエフェクトを配布しています。ダウンロードした zip に、Mac と Windows のインストール方法が入っています。",
-  "contact": ""
+  "contact": "",
+  "notice": "動作確認は DaVinci Resolve Studio 21.1（Mac）だけで行っています。無料版の DaVinci Resolve では確認していないため、Studio 限定（無料版では動かない）の可能性があります。"
  },
  "install": {
   "fuse": {
@@ -51,7 +52,7 @@ window.SITE_DATA = {
     "Morph を 0 → 1 にキーフレームで動かす"
    ],
    "install": "fuse",
-   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
    "credits": [
     {
      "text": "Easing functions based on Robert Penner's easing equations",
@@ -67,6 +68,7 @@ window.SITE_DATA = {
      "notes": "公開"
     }
    ],
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
    "coverUrl": "images/shapemorph/cover.jpg",
    "galleryUrls": [
     {
@@ -76,7 +78,7 @@ window.SITE_DATA = {
    ],
    "download": {
     "url": "downloads/shapemorph-1.0.0.zip",
-    "size": 10180
+    "size": 10226
    }
   },
   {
@@ -107,7 +109,7 @@ window.SITE_DATA = {
     "Text ページで文字を入力し、Shape・Animation・Color ページで動きと見た目を決める"
    ],
    "install": "fuse",
-   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
    "credits": [
     {
      "text": "Shape SDFs based on Inigo Quilez",
@@ -133,6 +135,7 @@ window.SITE_DATA = {
      "notes": "最初の版"
     }
    ],
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
    "coverUrl": "images/shapemorphtext/cover.jpg",
    "galleryUrls": [
     {
@@ -146,7 +149,7 @@ window.SITE_DATA = {
    ],
    "download": {
     "url": "downloads/shapemorphtext-2.0.0.zip",
-    "size": 17104
+    "size": 17147
    }
   },
   {
@@ -177,7 +180,7 @@ window.SITE_DATA = {
     "「ピンを配置」をオフにして、位置ピンをキーフレームで動かす"
    ],
    "install": "fuse",
-   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
    "credits": [
     {
      "text": "変形の手法: As-Rigid-As-Possible Surface Modeling (Sorkine & Alexa, 2007)",
@@ -192,6 +195,7 @@ window.SITE_DATA = {
      "notes": "公開"
     }
    ],
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
    "coverUrl": "images/puppetpin/cover.jpg",
    "galleryUrls": [
     {
@@ -201,7 +205,7 @@ window.SITE_DATA = {
    ],
    "download": {
     "url": "downloads/puppetpin-1.0.0.zip",
-    "size": 9881
+    "size": 9924
    }
   },
   {
@@ -232,7 +236,7 @@ window.SITE_DATA = {
     "2 本目以降は「Stroke 2」などのページで「このストロークを描く」を押してから描く"
    ],
    "install": "fuse",
-   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。Studio 限定（無料版では動かない）の可能性があります",
    "credits": [],
    "changelog": [
     {
@@ -241,6 +245,7 @@ window.SITE_DATA = {
      "notes": "公開"
     }
    ],
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
    "coverUrl": "images/brushpaint/cover.jpg",
    "galleryUrls": [
     {
@@ -250,7 +255,7 @@ window.SITE_DATA = {
    ],
    "download": {
     "url": "downloads/brushpaint-1.0.0.zip",
-    "size": 10759
+    "size": 10810
    }
   },
   {
@@ -281,7 +286,7 @@ window.SITE_DATA = {
     "インスペクタで揺れ幅や長さを調整する"
    ],
    "install": "fuse",
-   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認。GPU（Metal / CUDA / OpenCL）で処理",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
    "credits": [
     {
      "text": "Easing functions based on Robert Penner's easing equations",
@@ -297,6 +302,7 @@ window.SITE_DATA = {
      "notes": "公開"
     }
    ],
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
    "coverUrl": "images/telopanim/cover.jpg",
    "galleryUrls": [
     {
@@ -310,7 +316,7 @@ window.SITE_DATA = {
    ],
    "download": {
     "url": "downloads/telopanim-1.0.0.zip",
-    "size": 28321
+    "size": 28371
    }
   },
   {
@@ -344,7 +350,7 @@ window.SITE_DATA = {
     "Fusion ページでは GlassShatter ノード（Fuses カテゴリ）か、Effects ライブラリ → Templates →「ガラス割れ」を使う"
    ],
    "install": "fuse",
-   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認。GPU（Metal / CUDA / OpenCL）で処理",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
    "credits": [],
    "changelog": [
     {
@@ -358,6 +364,7 @@ window.SITE_DATA = {
      "notes": "公開"
     }
    ],
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
    "coverUrl": "images/glassshatter/cover.jpg",
    "galleryUrls": [
     {
@@ -371,7 +378,7 @@ window.SITE_DATA = {
    ],
    "download": {
     "url": "downloads/glassshatter-1.1.0.zip",
-    "size": 19221
+    "size": 19273
    }
   }
  ]
