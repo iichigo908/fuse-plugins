@@ -312,6 +312,60 @@ window.SITE_DATA = {
     "url": "downloads/telopanim-1.0.0.zip",
     "size": 28321
    }
+  },
+  {
+   "id": "glassshatter",
+   "name": "GlassShatter",
+   "version": "1.0.0",
+   "updated": "2026-10-28",
+   "category": "Edit エフェクト",
+   "tags": [
+    "ガラス",
+    "破片",
+    "トランジション",
+    "3D"
+   ],
+   "summary": "画像がガラスのように割れて砕けるエフェクト",
+   "description": [
+    "静止画や映像がガラスのように割れて、破片になって飛び散るエフェクトです。進行度 0 → 1 で割れが進み、ひびが入ってから破片が外れ、最後には何も残りません。割れたあとは透明になるので、下のトラックが見えます。",
+    "割れ方は 2 種類。衝撃の位置からひびが広がって中心から崩れていくタイプと、全体が同時に割れて手前に飛んでくるタイプです。破片は立体的に傾いて回転し、向きによる明暗とガラスの切り口がつきます。"
+   ],
+   "features": [
+    "衝撃点から崩れるタイプと、全体が同時に指定方向（X・Y・Z）へ飛ぶタイプ",
+    "破片ごとに方向がずれる「ばらつき」と、飛び散り・重力・回転の調整",
+    "放射状のひびが入るガラスらしい割れ方。破片の数は 2 枚から 200 枚まで",
+    "立体感・厚み・光の強さ、ひびの太さと明るさ。処理は GPU"
+   ],
+   "usage": [
+    "Edit ページの「エフェクト」→ Fusion エフェクト →「ガラス割れ」を開く",
+    "使いたいエフェクトを静止画などのクリップにドラッグする（自動は勝手に割れる、進行度はキーフレームで動かす）",
+    "インスペクタで衝撃の位置・破片の数・飛ぶ方向などを調整する"
+   ],
+   "install": "fuse",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認。GPU（Metal / CUDA / OpenCL）で処理",
+   "credits": [],
+   "changelog": [
+    {
+     "version": "1.0.0",
+     "date": "2026-10-28",
+     "notes": "公開"
+    }
+   ],
+   "coverUrl": "images/glassshatter/cover.jpg",
+   "galleryUrls": [
+    {
+     "url": "images/glassshatter/gallery-1.jpg",
+     "caption": "衝撃点から（進行度 0.1 / 0.22 / 0.35 / 0.45 / 0.6 / 0.8）"
+    },
+    {
+     "url": "images/glassshatter/gallery-2.jpg",
+     "caption": "上: 全体が同時にまっすぐ手前へ／中: 左上手前へ・ばらつき大・40 枚／下: 衝撃点から・6 枚"
+    }
+   ],
+   "download": {
+    "url": "downloads/glassshatter-1.0.0.zip",
+    "size": 15152
+   }
   }
  ]
 };
