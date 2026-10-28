@@ -316,14 +316,15 @@ window.SITE_DATA = {
   {
    "id": "glassshatter",
    "name": "GlassShatter",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "updated": "2026-10-28",
    "category": "Edit エフェクト",
    "tags": [
     "ガラス",
     "破片",
     "トランジション",
-    "3D"
+    "3D",
+    "Fusion ノード"
    ],
    "summary": "画像がガラスのように割れて砕けるエフェクト",
    "description": [
@@ -339,12 +340,18 @@ window.SITE_DATA = {
    "usage": [
     "Edit ページの「エフェクト」→ Fusion エフェクト →「ガラス割れ」を開く",
     "使いたいエフェクトを静止画などのクリップにドラッグする（自動は勝手に割れる、進行度はキーフレームで動かす）",
-    "インスペクタで衝撃の位置・破片の数・飛ぶ方向などを調整する"
+    "インスペクタで衝撃の位置・破片の数・飛ぶ方向などを調整する",
+    "Fusion ページでは GlassShatter ノード（Fuses カテゴリ）か、Effects ライブラリ → Templates →「ガラス割れ」を使う"
    ],
    "install": "fuse",
    "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows は未確認。GPU（Metal / CUDA / OpenCL）で処理",
    "credits": [],
    "changelog": [
+    {
+     "version": "1.1.0",
+     "date": "2026-10-28",
+     "notes": "Fusion ページの Templates にも 4 種を追加"
+    },
     {
      "version": "1.0.0",
      "date": "2026-10-28",
@@ -363,8 +370,8 @@ window.SITE_DATA = {
     }
    ],
    "download": {
-    "url": "downloads/glassshatter-1.0.0.zip",
-    "size": 15152
+    "url": "downloads/glassshatter-1.1.0.zip",
+    "size": 19221
    }
   }
  ]
