@@ -380,6 +380,65 @@ window.SITE_DATA = {
     "url": "downloads/glassshatter-1.1.0.zip",
     "size": 19273
    }
+  },
+  {
+   "id": "halftone",
+   "name": "Halftone",
+   "version": "1.0.0",
+   "updated": "2026-10-29",
+   "category": "Fusion ノード",
+   "tags": [
+    "ハーフトーン",
+    "網点",
+    "印刷風",
+    "Edit ページ"
+   ],
+   "summary": "画像を網点（ハーフトーン）にするノード",
+   "description": [
+    "画像を網点（ハーフトーン）に変えるノードです。回転したグリッドにドットが並び、画像の明るさでドットの大きさが変わります。Fusion ページのノードとして、また Edit ページのエフェクトとして使えます。",
+    "ドットの形は 8 種類。モノクロ、画像の色、印刷風の CMYK の 3 つのモードがあり、サイズ・角度・色を自由に変えられます。直線・円・マスクで適用範囲を決めて、途中からだんだんハーフトーンになる表現もできます。"
+   ],
+   "features": [
+    "ドットの形: 丸・四角・ひし形・線・十字・三角・六角形・星",
+    "モノクロ／画像の色／CMYK（4 版を角度を変えて重ねる印刷風）",
+    "サイズ・角度・最小と最大のドット・コントラスト・ぼかし・ドットと背景の色。背景の透明化とアルファの維持",
+    "適用範囲: 全体・直線・円・マスク入力。ドットが育つ／クロスフェードでなじませる。処理は GPU"
+   ],
+   "usage": [
+    "Fusion ページで Halftone ノード（Fuses カテゴリ）を追加して画像をつなぐ。または Edit ページの「エフェクト」→ Fusion エフェクト →「ハーフトーン」をクリップにドラッグ",
+    "形・モード・サイズ・角度・色を決める",
+    "「Area」ページ（Edit ページでは「適用範囲」）で、ハーフトーンにする範囲となじませ方を決める"
+   ],
+   "install": "fuse",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
+   "credits": [],
+   "changelog": [
+    {
+     "version": "1.0.0",
+     "date": "2026-10-29",
+     "notes": "公開"
+    }
+   ],
+   "coverUrl": "images/halftone/cover.jpg",
+   "galleryUrls": [
+    {
+     "url": "images/halftone/gallery-1.jpg",
+     "caption": "丸・四角・線・星・画像の色（六角形、黒地）・CMYK"
+    },
+    {
+     "url": "images/halftone/gallery-2.jpg",
+     "caption": "適用範囲: 直線（ドットが育つ／クロスフェード）・円（反転）・マスク入力"
+    },
+    {
+     "url": "images/halftone/gallery-3.jpg",
+     "caption": "透明な入力（文字だけ）: アルファを保つ オン／オフ／CMYK"
+    }
+   ],
+   "download": {
+    "url": "downloads/halftone-1.0.0.zip",
+    "size": 17367
+   }
   }
  ]
 };
