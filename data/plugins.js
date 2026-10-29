@@ -499,6 +499,58 @@ window.SITE_DATA = {
     "url": "downloads/lightsweep-1.0.0.zip",
     "size": 8125
    }
+  },
+  {
+   "id": "waterdrops",
+   "name": "WaterDrops",
+   "version": "1.0.0",
+   "updated": "2026-10-29",
+   "category": "Fusion ノード",
+   "tags": [
+    "水滴",
+    "ガラス",
+    "歪み",
+    "マスク",
+    "Edit ページ"
+   ],
+   "summary": "ガラスに付いた水滴の歪みと透明感を重ねるノード",
+   "description": [
+    "画像の上にガラスに付いた水滴を重ねるノードです。水滴はレンズのように後ろの画像を屈折させ（拡大・上下反転）、ハイライト、反対側の明るい三日月、暗い縁、やわらかい影で透明感を出します。",
+    "2 つ目の入力「Area Mask」にマスクやアルファのある画像をつなぐと、その範囲にだけ水滴が付きます（つながないときは画面全体）。水滴の間のガラスをぼかす「くもり」や、水滴が順に現れる「出現」（0 → 1）も使えます。"
+   ],
+   "features": [
+    "屈折の強さ（0 = 平ら、1 = 拡大、1 より上 = 本物の水滴のように上下反転）",
+    "ハイライト・縁の暗さ・影・光の角度・色づけで透明感を調整",
+    "大きさ・ばらつき・密度・小さい水滴・縦長・ゆがみ・シードで並びと形を変える",
+    "Area Mask 入力で範囲を指定（反転可）。くもり、出現 0 → 1 のアニメーション。処理は GPU"
+   ],
+   "usage": [
+    "Fusion ページで WaterDrops ノード（Fuses カテゴリ）を追加して画像をつなぐ。または Edit ページの「エフェクト」→ Fusion エフェクト →「水滴」をクリップにドラッグ",
+    "範囲を決めたいときは、Fusion ページで Ellipse / Polygon などのマスクを 2 つ目の入力（Area Mask）につなぐ",
+    "屈折・大きさ・密度・くもりなどをインスペクタで調整。水滴を順に出したいときは「出現」に 0 と 1 のキーフレームを打つ"
+   ],
+   "install": "fuse",
+   "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
+   "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
+   "credits": [],
+   "changelog": [
+    {
+     "version": "1.0.0",
+     "date": "2026-10-29",
+     "notes": "公開"
+    }
+   ],
+   "coverUrl": "images/waterdrops/cover.jpg",
+   "galleryUrls": [
+    {
+     "url": "images/waterdrops/gallery-1.jpg",
+     "caption": "楕円マスク＋くもり／出現 0.4／大きい水滴・強い屈折／くもり（水滴の中はくっきり）"
+    }
+   ],
+   "download": {
+    "url": "downloads/waterdrops-1.0.0.zip",
+    "size": 9407
+   }
   }
  ]
 };
