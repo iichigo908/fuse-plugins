@@ -468,7 +468,7 @@
     {
       "id": "halftone",
       "name": "Halftone",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "updated": "2026-10-29",
       "category": "Fusion ノード",
       "tags": [
@@ -490,7 +490,7 @@
       ],
       "usage": [
         "Fusion ページで Halftone ノード（Fuses カテゴリ）を追加して画像をつなぐ。または Edit ページの「エフェクト」→ Fusion エフェクト →「ハーフトーン」をクリップにドラッグ",
-        "形・モード・サイズ・角度・色を決める",
+        "インスペクタで形・モード・サイズ・角度・色を選ぶ",
         "「Area」ページ（Edit ページでは「適用範囲」）で、ハーフトーンにする範囲となじませ方を決める"
       ],
       "install": "fuse",
@@ -530,6 +530,86 @@
           {
             "src": "../halftone/out/r2.jpg",
             "caption": "透明な入力（文字だけ）: アルファを保つ オン／オフ／CMYK"
+          }
+        ]
+      },
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
+      "credits": [],
+      "changelog": [
+        {
+          "version": "1.0.1",
+          "date": "2026-10-29",
+          "notes": "テンプレートを 1 つにまとめた（形やモードはインスペクタで選ぶ）"
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-10-29",
+          "notes": "公開"
+        }
+      ]
+    },
+    {
+      "id": "lightsweep",
+      "name": "LightSweep",
+      "version": "1.0.0",
+      "updated": "2026-10-29",
+      "category": "Fusion ノード",
+      "tags": [
+        "光",
+        "ロゴ",
+        "テロップ",
+        "Edit ページ"
+      ],
+      "summary": "画像の上を光の帯が通り過ぎるノード",
+      "description": [
+        "ロゴや文字の上を光の帯がサッと通り過ぎる、ライトスイープのノードです。帯の位置は進行度（0 = 被写体の手前、1 = 通り過ぎた後）で決め、キーフレームで 0 → 1 に動かします。速さの変化はイージングの種類と強さで調整できます。",
+        "初期設定では画像のアルファがある所だけに光が当たり、帯は被写体の端から端まで通過します。帯の幅・やわらかさ・色・強さ・角度、形（やわらか／くっきり／二重線）、合成方法（加算／スクリーン）を変えられます。"
+      ],
+      "features": [
+        "進行度 0 → 1 をキーフレームで動かす。イージングは 4 種類と 0〜1 の強さ",
+        "帯の幅・やわらかさ・角度、形はやわらか・くっきり・二重線",
+        "光の色と強さ、加算またはスクリーンで合成",
+        "被写体（アルファ）だけに光を当て、被写体の範囲を通過。画面全体にも切り替えられる。処理は GPU"
+      ],
+      "usage": [
+        "Fusion ページで LightSweep ノード（Fuses カテゴリ）を追加して画像をつなぐ。または Edit ページの「エフェクト」→ Fusion エフェクト →「ライトスイープ」をクリップにドラッグ",
+        "「進行度」に 0 と 1 のキーフレームを打つ（間隔が通過の速さ）",
+        "イージング・幅・色・角度などをインスペクタで調整する"
+      ],
+      "install": "fuse",
+      "files": [
+        {
+          "src": "../lightsweep/src/LightSweep.fuse",
+          "dst": "Fusion/Fuses/LightSweep.fuse"
+        },
+        {
+          "src": "../lightsweep/build/Templates/ライトスイープ",
+          "dst": "Fusion/Templates/Edit/Effects/ライトスイープ"
+        },
+        {
+          "src": "../lightsweep/build/Templates/ライトスイープ",
+          "dst": "Fusion/Templates/Fusion/ライトスイープ"
+        }
+      ],
+      "images": {
+        "cover": {
+          "src": "../lightsweep/out/r1/zfull.png",
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ]
+        },
+        "gallery": [
+          {
+            "src": "../lightsweep/out/r1.jpg",
+            "caption": "進行度 0.2 / 0.45 / 0.7、二重線、くっきり・青、スクリーン、画面全体"
+          },
+          {
+            "src": "../lightsweep/out/e1.jpg",
+            "caption": "同じ進行度 0.5 でのイージングの違い（なし／ゆっくり始まる／ゆっくり終わる）"
           }
         ]
       },
