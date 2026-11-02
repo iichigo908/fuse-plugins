@@ -695,6 +695,82 @@
           "notes": "公開"
         }
       ]
+    },
+    {
+      "id": "motiontexture",
+      "name": "MotionTexture",
+      "version": "1.0.0",
+      "updated": "2026-11-02",
+      "category": "Fusion ノード",
+      "tags": [
+        "テクスチャ",
+        "傷",
+        "紙",
+        "ノイズ",
+        "Edit ページ"
+      ],
+      "summary": "傷・汚れ、しわ紙、ノイズの動くテクスチャを重ねるノード",
+      "description": [
+        "傷・汚れ、しわ紙、ノイズのテクスチャを GPU で作り、動かして画像に重ねるノードです。テクスチャは止めておく、数コマごとに変える（手作り風のガタつき）、決まった向きに流す、から選べ、フリッカーも付けられます。",
+        "入力をつなぐと合成方法（オーバーレイ・ソフトライト・乗算・スクリーン・加算・通常）で重ね、入力のアルファは保たれます。何もつながないとテクスチャだけを出力し、傷・汚れは透明の背景に出るのでそのまま Merge に重ねられます。"
+      ],
+      "features": [
+        "3 種類のテクスチャ：傷・汚れ（傷・ほこり・こすれ）、しわ紙（折り目と陰影）、ノイズ（モノクロ・カラー）",
+        "動き：止める／コマごとに変える（コマ数を指定）／流れる（向きと速さ）、フリッカー",
+        "合成：おまかせ・オーバーレイ・ソフトライト・乗算・スクリーン・加算・通常・テクスチャのみ",
+        "入力なしでも単体でテクスチャを出力。処理は GPU"
+      ],
+      "usage": [
+        "Edit ページの「エフェクト」→ Fusion エフェクト →「動くテクスチャ」をクリップにドラッグ。または Fusion ページで MotionTexture ノード（Fuses カテゴリ）を追加する",
+        "「テクスチャ」で種類を選び、「動き」で止める・コマごとに変える・流れるを選ぶ",
+        "強さ・大きさ・合成方法と、種類ごとの項目（傷の量、しわの深さ、粒の大きさなど）をインスペクタで調整する"
+      ],
+      "install": "fuse",
+      "files": [
+        {
+          "src": "../motiontexture/src/MotionTexture.fuse",
+          "dst": "Fusion/Fuses/MotionTexture.fuse"
+        },
+        {
+          "src": "../motiontexture/build/Templates/動くテクスチャ",
+          "dst": "Fusion/Templates/Edit/Effects/動くテクスチャ"
+        },
+        {
+          "src": "../motiontexture/build/Templates/動くテクスチャ",
+          "dst": "Fusion/Templates/Fusion/動くテクスチャ"
+        }
+      ],
+      "images": {
+        "cover": {
+          "src": "../motiontexture/out/cover.png",
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ]
+        },
+        "gallery": [
+          {
+            "src": "../motiontexture/out/g1.jpg",
+            "caption": "傷・汚れ（透明の背景をグレーの上に表示）／しわ紙／ノイズ／しわ紙を画像に乗算"
+          },
+          {
+            "src": "../motiontexture/out/g2.jpg",
+            "caption": "「流れる」：10・12・14 コマ目（下向き、1 コマ 10 ピクセル）"
+          }
+        ]
+      },
+      "requirements": "DaVinci Resolve Studio 21.1（Mac）で動作確認。Windows・無料版は未確認。GPU（Metal / CUDA / OpenCL）で処理するため、無料版では動かない（Studio 限定の）可能性があります",
+      "studioNote": "Studio 限定の可能性あり（無料版は未確認）",
+      "credits": [],
+      "changelog": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-02",
+          "notes": "公開"
+        }
+      ]
     }
   ]
 }
